@@ -1,12 +1,12 @@
 const image_slideshow = document.getElementById('image_slideshow');
 
 let imageSources = [
-    'images\\Four_Star_Products_alpha.png',
-    'images\\product1.png'
+    'images/Four_Star_Products_alpha.png',
+    'images/product1.png'
 ]
 
 let currentSrcNum = 0;
-let currentImgSrc = 'images\\Four_Star_Products_alpha.png';
+let currentImgSrc = 'images/Four_Star_Products_alpha.png';
 
 let cycleImgs = () => {
     if (currentSrcNum >= imageSources.length - 1) {
