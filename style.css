@@ -1,3 +1,48 @@
 html{
     font-family: 'IBM Plex Serif', serif;
 }
+
+body{
+    width: 50%;
+    min-width: 60%;
+    margin: 0 auto;
+    padding: 70px;
+    background: #121543;
+    border:15px solid #ffc90e;
+    padding: 15px;
+    border-radius: 3%;
+    box-shadow: 5px 5px 10px black;
+
+}
+
+h1{
+    color: #fff;
+}
+
+h3{
+    color: #fff;
+}
+
+p{
+    color: #fff;
+}
+
+img{
+    height: 250px;
+    width: 500px;
+}
+
+#ThePic{
+    height: 250;
+    width: auto;
+}
+
+
+a:link {
+    color: red;
+  }
+
+  
+  a:visited {
+    color: green;
+  }
