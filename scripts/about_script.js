@@ -1,14 +1,16 @@
-const bar_graph = document.getElementById('bar_graph');
-var ctx = bar_graph.getContext('2d');
+const leading_graph = document.getElementById('leading_graph');
+const other_graph = document.getElementById('other_graph');
+const four_star_graph = document.getElementById('four_star_graph');
 
 // draw square
-let drawSquare = (x, y, width, height, fillStyle) => {
-    ctx.fillStyle = fillStyle;
-    ctx.fillRect(x, y, width, height);
+let drawSquare = (canvas, x, y, width, height, fillStyle) => {
+  ctx = canvas.getContext('2d');
+  ctx.fillStyle = fillStyle;
+  ctx.fillRect(x, y, width, height);
   }
-  drawSquare(30, 00, 80, 20, '#F00');
-  drawSquare(30, 20, 30, 20, '#00E');
-  drawSquare(30, 40, 120, 20, '#080');
+  drawSquare(leading_graph, 30, 00, 80, 20, '#F00');
+  drawSquare(other_graph, 30, 00, 30, 20, '#00E');
+  drawSquare(four_star_graph, 30, 00, 120, 20, '#080');
    
   // draw rectangle outline
   let drawBox = () => {

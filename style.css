@@ -3,6 +3,7 @@ html{
     background-repeat: repeat-x;
     background-size: 1000px;
     font-family: 'IBM Plex Serif', serif;
+    color: #CFD;
 }
 
 body{
@@ -16,18 +17,6 @@ body{
     border-radius: 3%;
     box-shadow: 5px 5px 10px black;
 
-}
-
-h1{
-    color: #fff;
-}
-
-h3{
-    color: #fff;
-}
-
-p{
-    color: #fff;
 }
 
 img{
