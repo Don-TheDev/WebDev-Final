@@ -1,6 +1,14 @@
-const leading_graph = document.getElementById('leading_graph');
-const other_graph = document.getElementById('other_graph');
-const four_star_graph = document.getElementById('four_star_graph');
+const bar_graph = document.getElementById('bar_graph');
+
+let ctx;
+
+// draw text
+let drawText = (canvas, font, text, x, y) => {
+  ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#CFD';
+  ctx.font = font;
+  ctx.fillText(text, x, y);
+}
 
 // draw square
 let drawSquare = (canvas, x, y, width, height, fillStyle) => {
@@ -8,9 +16,13 @@ let drawSquare = (canvas, x, y, width, height, fillStyle) => {
   ctx.fillStyle = fillStyle;
   ctx.fillRect(x, y, width, height);
   }
-  drawSquare(leading_graph, 30, 00, 80, 20, '#F00');
-  drawSquare(other_graph, 30, 00, 30, 20, '#00E');
-  drawSquare(four_star_graph, 30, 00, 120, 20, '#080');
+  drawText(bar_graph, '1.0em IBM Plex Serif', 'Positive Comments', 150, 15,);
+  drawSquare(bar_graph, 150, 40, 80, 20, '#F00');
+  drawText(bar_graph, '1.0em IBM Plex Serif', 'Leading Brand: ', 30, 55,);
+  drawSquare(bar_graph, 150, 60, 30, 20, '#00E');
+  drawText(bar_graph, '1.0em IBM Plex Serif', 'Other Brands: ', 30, 75,);
+  drawSquare(bar_graph, 150, 80, 120, 20, '#080');
+  drawText(bar_graph, '1.0em IBM Plex Serif', 'Four Star: ', 30, 95,);
    
   // draw rectangle outline
   let drawBox = () => {
