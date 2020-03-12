@@ -47,7 +47,7 @@ a:link {
     -webkit-text-fill-color: transparent;
   }
 
-  h3 {
+  h2, h3 {
     background: -webkit-linear-gradient(#121543, #ffc90e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
