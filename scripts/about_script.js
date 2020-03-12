@@ -16,13 +16,31 @@ let drawSquare = (canvas, x, y, width, height, fillStyle) => {
   ctx.fillStyle = fillStyle;
   ctx.fillRect(x, y, width, height);
   }
-  drawText(bar_graph, '1.0em IBM Plex Serif', 'Positive Comments', 150, 15,);
-  drawSquare(bar_graph, 150, 40, 80, 20, '#F00');
-  drawText(bar_graph, '1.0em IBM Plex Serif', 'Leading Brand: ', 30, 55,);
-  drawSquare(bar_graph, 150, 60, 30, 20, '#00E');
-  drawText(bar_graph, '1.0em IBM Plex Serif', 'Other Brands: ', 30, 75,);
-  drawSquare(bar_graph, 150, 80, 120, 20, '#080');
-  drawText(bar_graph, '1.0em IBM Plex Serif', 'Four Star: ', 30, 95,);
+  drawText(bar_graph, '1.0em IBM Plex Serif', 'Positive Reviews', 250, 15,);
+  for (i = 0; i <= 1200; i += 240) {
+  drawText(bar_graph, '1.0em IBM Plex Serif', i, (i/6 + 150), 35,);
+}
+  drawSquare(bar_graph, 150, 40, 100, 20, '#F00');
+  drawSquare(bar_graph, 150, 60, 135, 20, '#00E');
+  drawSquare(bar_graph, 150, 80, 175, 20, '#080');
+  drawText(bar_graph, '1.0em IBM Plex Serif', 'Leading Brand: ', 00, 75,);
+  drawText(bar_graph, '1.0em IBM Plex Serif', '2018', 110, 55,);
+  drawText(bar_graph, '1.0em IBM Plex Serif', '2019', 110, 75,);
+  drawText(bar_graph, '1.0em IBM Plex Serif', '2020', 110, 95,);
+  drawSquare(bar_graph, 150, 130, 85, 20, '#F00');
+  drawSquare(bar_graph, 150, 150, 75, 20, '#00E');
+  drawSquare(bar_graph, 150, 170, 115, 20, '#080');
+  drawText(bar_graph, '1.0em IBM Plex Serif', 'Other Brands: ', 00, 165,);
+  drawText(bar_graph, '1.0em IBM Plex Serif', '2018', 110, 145,);
+  drawText(bar_graph, '1.0em IBM Plex Serif', '2019', 110, 165,);
+  drawText(bar_graph, '1.0em IBM Plex Serif', '2020', 110, 185,);
+  drawSquare(bar_graph, 150, 220, 80, 20, '#F00');
+  drawSquare(bar_graph, 150, 240, 125, 20, '#00E');
+  drawSquare(bar_graph, 150, 260, 225, 20, '#080');
+  drawText(bar_graph, '1.0em IBM Plex Serif', 'Four Star: ', 00, 255,);
+  drawText(bar_graph, '1.0em IBM Plex Serif', '2018', 110, 235,);
+  drawText(bar_graph, '1.0em IBM Plex Serif', '2019', 110, 255,);
+  drawText(bar_graph, '1.0em IBM Plex Serif', '2020', 110, 275,);
    
   // draw rectangle outline
   let drawBox = () => {
