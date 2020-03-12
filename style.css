@@ -44,12 +44,14 @@ a:link {
     font-size: 72px;
     background: -webkit-linear-gradient(#121543, #ffc90e);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   h2, h3 {
     background: -webkit-linear-gradient(#121543, #ffc90e);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
