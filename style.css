@@ -53,11 +53,27 @@ a:link {
     -webkit-text-fill-color: transparent;
   }
 
+  #specs_main_image {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+
+  #ss_image {
+    border-radius: 20%;
+  }
+
+  .spec_item {
+    background-color: #fff;
+  }
+    
   .box{
     margin: 2px;
     padding: 5px;
     border: 2px solid #000;
-    height: 25px;
-    width: 650px;
+    height: 65px;
+    width: 400px;
     user-select: none;
+    background-color: #fff;
+    color: #000;
 }

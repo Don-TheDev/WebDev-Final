@@ -1,8 +1,10 @@
 const image_slideshow = document.getElementById('image_slideshow');
 
 let imageSources = [
-    'images/Four_Star_Products_alpha.png',
-    'images/product1.png'
+    'images/product1.png',
+    'images/lightsaber-butter-knife.jpg',
+    'images/neon-green-sword.jpg',
+    'images/toastie-knife.jpg'
 ]
 
 let currentSrcNum = 0;
@@ -18,7 +20,7 @@ let cycleImgs = () => {
 }
 
 let setSlideShowImage = imgSrc => {
-    image_slideshow.innerHTML = '<img src="' + imgSrc + '" />'
+    image_slideshow.innerHTML = '<img src="' + imgSrc + '" id="ss_image" />'
 }
 
 let runSlideshow = () => {
